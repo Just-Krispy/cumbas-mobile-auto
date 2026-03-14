@@ -3,308 +3,1798 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Cumba's Mobile Auto Solutions — Tampa's #1 Mobile Mechanic</title>
-  <meta name="description" content="Tampa Bay's top-rated mobile mechanic. 380+ five-star Google reviews. Brakes, A/C, engine, diagnostics & more. We come to you 24/7. Licensed, bonded & insured. Call (813) 748-0049.">
-  <meta name="keywords" content="mobile mechanic Tampa, mobile auto repair, Tampa mechanic, Valrico mechanic, Brandon mechanic, 24/7 mechanic, mobile car repair, Cumba's Mobile Auto Solutions">
+  <meta name="description" content="Cumba's Mobile Auto Solutions — Tampa's trusted family-owned mobile mechanic. Father & son team, 30-min response, fair prices. Call (813) 748-0049.">
+  <meta name="theme-color" content="#1e3a8a">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <title>Cumba's Mobile Auto Solutions | Tampa's Family Mobile Mechanic</title>
+  <meta name="keywords" content="mobile mechanic Tampa, mobile auto repair, car repair Tampa, Cumba's Mobile Auto, family mechanic Tampa">
   <meta name="author" content="Cumba's Mobile Auto Solutions">
-  <meta name="robots" content="index, follow">
-  <meta property="og:title" content="Cumba's Mobile Auto Solutions — Tampa's #1 Mobile Mechanic">
-  <meta property="og:description" content="380+ five-star reviews. We bring the shop to you — brakes, A/C, engine, diagnostics & more. 24/7 service across Tampa Bay.">
-  <meta property="og:image" content="assets/hero-mechanic-DKnMr7oL.jpg">
+  <meta name="robots" content="index,follow">
+  <meta property="og:title" content="Cumba's Mobile Auto Solutions — Tampa's Family Mobile Mechanic">
+  <meta property="og:description" content="Father-son mobile mechanic team serving Tampa. Honest repairs, fair prices, 30-min response. Call (813) 748-0049.">
+  <meta property="og:image" content="assets/logo.png">
   <meta property="og:type" content="website">
   <meta property="og:locale" content="en_US">
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="Cumba's Mobile Auto Solutions — Tampa's #1 Mobile Mechanic">
-  <meta name="twitter:description" content="380+ five-star reviews. We bring the shop to you — 24/7 across Tampa Bay.">
-  <meta name="twitter:image" content="assets/hero-mechanic-DKnMr7oL.jpg">
-  <meta name="theme-color" content="#0a0a0a">
+  <meta name="twitter:title" content="Cumba's Mobile Auto Solutions — Tampa's Family Mechanic">
+  <meta name="twitter:description" content="Father & son team. Honest work, fair prices, 30-min response. Serving Tampa 24/7.">
+  <meta name="twitter:image" content="assets/logo.png">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+
   <style>
-    *,*::before,*::after{margin:0;padding:0;box-sizing:border-box}
-    html{scroll-behavior:smooth}
-    body{font-family:'Inter',system-ui,-apple-system,sans-serif;background:#0a0a0a;color:#fff;overflow-x:hidden;-webkit-font-smoothing:antialiased}
-    .nav{position:fixed;top:0;left:0;right:0;z-index:1000;padding:0 clamp(1.25rem,4vw,3rem);height:72px;display:flex;align-items:center;justify-content:space-between;background:rgba(10,10,10,.65);backdrop-filter:blur(20px) saturate(1.4);-webkit-backdrop-filter:blur(20px) saturate(1.4);border-bottom:1px solid rgba(255,255,255,.06);transition:background .3s,box-shadow .3s}
-    .nav.scrolled{background:rgba(10,10,10,.92);box-shadow:0 4px 30px rgba(0,0,0,.4)}
-    .nav-logo{display:flex;align-items:center;gap:.5rem;text-decoration:none;flex-shrink:0}
-    .nav-logo-icon{width:36px;height:36px;background:#2563eb;border-radius:8px;display:flex;align-items:center;justify-content:center;font-weight:900;font-size:1.1rem;color:#fff}
-    .nav-logo-text{font-weight:800;font-size:1.05rem;letter-spacing:.04em;text-transform:uppercase;color:#fff}
-    .nav-logo-text span{color:#2563eb}
-    .nav-links{display:flex;align-items:center;gap:2rem;list-style:none}
-    .nav-links a{color:rgba(255,255,255,.7);text-decoration:none;font-size:.85rem;font-weight:600;letter-spacing:.06em;text-transform:uppercase;transition:color .25s;position:relative}
-    .nav-links a::after{content:'';position:absolute;bottom:-4px;left:0;width:0;height:2px;background:#2563eb;transition:width .3s}
-    .nav-links a:hover{color:#fff}
-    .nav-links a:hover::after{width:100%}
-    .nav-phone{display:flex;align-items:center;gap:.5rem;color:#fff;text-decoration:none;font-weight:700;font-size:.9rem;padding:.5rem 1.1rem;border:1.5px solid rgba(37,99,235,.5);border-radius:50px;transition:all .3s;flex-shrink:0}
-    .nav-phone:hover{background:rgba(37,99,235,.15);border-color:#2563eb}
-    .nav-phone svg{width:16px;height:16px;fill:#2563eb}
-    .hamburger{display:none;flex-direction:column;gap:5px;cursor:pointer;padding:8px;z-index:1010;background:none;border:none}
-    .hamburger span{display:block;width:24px;height:2px;background:#fff;border-radius:2px;transition:all .35s cubic-bezier(.77,0,.18,1);transform-origin:center}
-    .hamburger.active span:nth-child(1){transform:rotate(45deg) translate(5px,5px)}
-    .hamburger.active span:nth-child(2){opacity:0;transform:scaleX(0)}
-    .hamburger.active span:nth-child(3){transform:rotate(-45deg) translate(5px,-5px)}
-    .mobile-menu{display:none;position:fixed;inset:0;z-index:999;background:rgba(10,10,10,.97);backdrop-filter:blur(30px);-webkit-backdrop-filter:blur(30px);flex-direction:column;align-items:center;justify-content:center;gap:2rem;opacity:0;transition:opacity .4s}
-    .mobile-menu.open{display:flex;opacity:1}
-    .mobile-menu a{color:#fff;text-decoration:none;font-size:1.5rem;font-weight:700;letter-spacing:.08em;text-transform:uppercase;transition:color .25s}
-    .mobile-menu a:hover{color:#2563eb}
-    .mobile-menu .mobile-phone{margin-top:1rem;display:flex;align-items:center;gap:.6rem;color:#2563eb;font-size:1.3rem;font-weight:800}
-    @media(max-width:860px){.nav-links,.nav-phone{display:none}.hamburger{display:flex}}
-    .hero{position:relative;width:100%;min-height:100vh;display:flex;flex-direction:column;justify-content:center;overflow:hidden}
-    .hero-bg{position:absolute;inset:0;z-index:0}
-    .hero-bg img{width:100%;height:100%;object-fit:cover;object-position:center 40%}
-    .hero-bg::after{content:'';position:absolute;inset:0;background:linear-gradient(180deg,rgba(10,10,10,.85) 0%,rgba(10,10,10,.5) 35%,rgba(10,10,10,.55) 60%,rgba(10,10,10,.95) 100%),linear-gradient(90deg,rgba(10,10,10,.65) 0%,transparent 55%)}
-    .hero-content{position:relative;z-index:2;padding:0 clamp(1.5rem,6vw,5rem);max-width:850px;padding-top:100px}
-    .hero-badge{display:inline-flex;align-items:center;gap:.5rem;padding:.4rem 1rem .4rem .6rem;background:rgba(37,99,235,.12);border:1px solid rgba(37,99,235,.3);border-radius:50px;font-size:.78rem;font-weight:600;letter-spacing:.06em;text-transform:uppercase;color:#60a5fa;margin-bottom:1.5rem;animation:fadeInUp .8s ease both}
-    .hero-badge-dot{width:7px;height:7px;background:#22c55e;border-radius:50%;animation:pulse-dot 2s ease infinite}
-    @keyframes pulse-dot{0%,100%{opacity:1;box-shadow:0 0 0 0 rgba(34,197,94,.5)}50%{opacity:.8;box-shadow:0 0 0 6px rgba(34,197,94,0)}}
-    .hero-heading{font-size:clamp(2.6rem,6.5vw,5rem);font-weight:900;line-height:1.05;letter-spacing:-.03em;text-transform:uppercase;margin-bottom:1.25rem;animation:fadeInUp .8s ease .15s both}
-    .hero-heading span{display:block;background:linear-gradient(135deg,#2563eb,#60a5fa);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text}
-    .hero-tagline{font-size:clamp(1rem,2vw,1.2rem);font-weight:400;color:rgba(255,255,255,.75);line-height:1.65;max-width:600px;margin-bottom:.6rem;animation:fadeInUp .8s ease .3s both}
-    .hero-sub-tagline{font-size:.85rem;font-weight:600;letter-spacing:.1em;text-transform:uppercase;color:rgba(255,255,255,.4);margin-bottom:2.2rem;animation:fadeInUp .8s ease .4s both}
-    .hero-ctas{display:flex;gap:1rem;flex-wrap:wrap;animation:fadeInUp .8s ease .5s both}
-    .btn{display:inline-flex;align-items:center;gap:.6rem;padding:.95rem 2rem;border-radius:50px;font-family:'Inter',sans-serif;font-size:.88rem;font-weight:700;letter-spacing:.08em;text-transform:uppercase;text-decoration:none;cursor:pointer;transition:all .3s cubic-bezier(.25,.8,.25,1);border:2px solid transparent}
-    .btn-primary{background:#2563eb;color:#fff;border-color:#2563eb;box-shadow:0 4px 25px rgba(37,99,235,.35)}
-    .btn-primary:hover{background:#1d4ed8;border-color:#1d4ed8;box-shadow:0 6px 35px rgba(37,99,235,.5);transform:translateY(-2px)}
-    .btn-outline{background:transparent;color:#fff;border-color:rgba(255,255,255,.35)}
-    .btn-outline:hover{border-color:#fff;background:rgba(255,255,255,.06);transform:translateY(-2px)}
-    .btn svg{width:18px;height:18px}
-    .hero-trust{display:flex;align-items:center;gap:2rem;margin-top:2.5rem;padding-top:2rem;border-top:1px solid rgba(255,255,255,.08);animation:fadeInUp .8s ease .65s both;flex-wrap:wrap}
-    .hero-trust-item{display:flex;align-items:center;gap:.5rem;font-size:.82rem;font-weight:500;color:rgba(255,255,255,.5)}
-    .hero-trust-item svg{width:18px;height:18px;flex-shrink:0}
-    .hero-trust-item strong{color:rgba(255,255,255,.8);font-weight:700}
-    @keyframes fadeInUp{from{opacity:0;transform:translateY(25px)}to{opacity:1;transform:translateY(0)}}
-    .marquee{position:absolute;bottom:0;left:0;right:0;z-index:3;background:linear-gradient(180deg,transparent,rgba(10,10,10,.6));padding:1.2rem 0;overflow:hidden;border-top:1px solid rgba(255,255,255,.05)}
-    .marquee-track{display:flex;width:max-content;animation:marquee-scroll 30s linear infinite}
-    .marquee-track:hover{animation-play-state:paused}
-    .marquee-content{display:flex;align-items:center;flex-shrink:0}
-    .marquee-item{font-size:.78rem;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:rgba(255,255,255,.25);white-space:nowrap;padding:0 .8rem}
-    .marquee-track:hover .marquee-item{color:rgba(255,255,255,.4)}
-    .marquee-sep{color:#2563eb;font-size:.5rem;opacity:.6}
-    @keyframes marquee-scroll{from{transform:translateX(0)}to{transform:translateX(-50%)}}
-    .services-section{padding:100px 24px;background:#0a0a0a}
-    .services-header{text-align:center;margin-bottom:64px}
-    .services-header h2{font-size:2.5rem;font-weight:800;letter-spacing:.15em;color:#fff;margin-bottom:16px}
-    .accent-line{width:48px;height:3px;background:#2563eb;margin:0 auto;border-radius:2px}
-    .services-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px;max-width:1200px;margin:0 auto}
-    .service-card{background:#141414;border:1px solid #222;border-radius:16px;padding:40px 32px;text-align:center;transition:transform .3s,border-color .3s,box-shadow .3s}
-    .service-card:hover{transform:translateY(-6px);border-color:#2563eb;box-shadow:0 0 24px rgba(37,99,235,.15),0 12px 32px rgba(0,0,0,.4)}
-    .service-card .icon-wrap{width:64px;height:64px;margin:0 auto 24px;display:flex;align-items:center;justify-content:center;background:rgba(37,99,235,.08);border-radius:14px;transition:background .3s}
-    .service-card:hover .icon-wrap{background:rgba(37,99,235,.14)}
-    .service-card .icon-wrap svg{width:30px;height:30px;stroke:#2563eb;stroke-width:1.8;fill:none;stroke-linecap:round;stroke-linejoin:round}
-    .service-card h3{font-size:.875rem;font-weight:700;letter-spacing:.12em;color:#fff;margin-bottom:10px}
-    .service-card p{font-size:.925rem;line-height:1.6;color:#999}
-    @media(max-width:960px){.services-grid{grid-template-columns:repeat(2,1fr)}}
-    @media(max-width:580px){.services-section{padding:72px 16px}.services-grid{grid-template-columns:1fr;gap:16px}.services-header h2{font-size:1.75rem}.service-card{padding:32px 24px}}
-    .reviews-section{padding:100px 24px;background:#111}
-    .reviews-container{max-width:1200px;margin:0 auto}
-    .reviews-heading{text-align:center;margin-bottom:60px}
-    .reviews-heading h2{font-size:2.5rem;font-weight:800;letter-spacing:.15em;color:#fff;margin-bottom:16px}
-    .google-rating-badge{display:flex;flex-direction:column;align-items:center;gap:8px;margin-bottom:56px}
-    .google-rating-score{display:flex;align-items:baseline;gap:16px}
-    .google-rating-score .score{font-size:64px;font-weight:800;color:#fff;line-height:1}
-    .google-rating-meta{display:flex;flex-direction:column;gap:4px}
-    .google-rating-meta .stars{font-size:24px;color:#fbbf24;letter-spacing:2px;line-height:1}
-    .google-rating-meta .label{font-size:11px;font-weight:700;letter-spacing:3px;color:#2563eb;text-transform:uppercase}
-    .google-rating-badge .verified{font-size:13px;color:#666}
-    .reviews-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px;margin-bottom:56px}
-    .review-card{background:#141414;border-radius:16px;padding:32px 28px 28px;position:relative;border:1px solid #1e1e1e;transition:border-color .3s,transform .3s}
-    .review-card:hover{border-color:rgba(37,99,235,.2);transform:translateY(-4px)}
-    .review-card .quote-mark{font-size:48px;font-weight:800;color:#2563eb;opacity:.25;line-height:1;position:absolute;top:20px;left:24px;font-family:Georgia,serif;pointer-events:none}
-    .review-card .card-stars{font-size:14px;color:#fbbf24;letter-spacing:2px;margin-bottom:16px}
-    .review-card .card-text{font-size:15px;line-height:1.7;color:#d4d4d4;margin-bottom:20px}
-    .review-card .card-author{font-size:14px;font-weight:600;color:#2563eb}
-    .reviews-cta{text-align:center}
-    .reviews-cta a{display:inline-block;padding:14px 36px;border:1.5px solid #2563eb;border-radius:8px;color:#2563eb;font-size:13px;font-weight:700;letter-spacing:3px;text-transform:uppercase;text-decoration:none;transition:background .3s,color .3s,box-shadow .3s}
-    .reviews-cta a:hover{background:#2563eb;color:#fff;box-shadow:0 0 30px rgba(37,99,235,.27)}
-    @media(max-width:1024px){.reviews-grid{grid-template-columns:repeat(2,1fr)}}
-    @media(max-width:640px){.reviews-section{padding:72px 16px}.reviews-grid{grid-template-columns:1fr;gap:16px}.google-rating-score .score{font-size:48px}.google-rating-meta .stars{font-size:20px}.review-card{padding:28px 24px 24px}}
-    #gallery{background:#0a0a0a;padding:5rem 1.5rem}
-    .section-heading{text-align:center;margin-bottom:3.5rem}
-    .section-heading h2{font-size:2.25rem;font-weight:800;letter-spacing:.15em;color:#fff;text-transform:uppercase;margin:0 0 .75rem 0}
-    .section-heading .subtext{color:#999;font-size:1rem;margin-top:1rem;max-width:520px;margin-left:auto;margin-right:auto;line-height:1.6}
-    .gallery-grid{max-width:1200px;margin:0 auto;display:grid;grid-template-columns:repeat(3,1fr);gap:1.25rem}
-    .gallery-item{position:relative;border-radius:8px;overflow:hidden;box-shadow:0 4px 20px rgba(0,0,0,.4)}
-    .gallery-item img{width:100%;height:280px;object-fit:cover;display:block;transition:transform .5s cubic-bezier(.25,.46,.45,.94)}
-    .gallery-item .gallery-overlay{position:absolute;inset:0;background:rgba(37,99,235,0);display:flex;align-items:center;justify-content:center;transition:background .4s}
-    .gallery-item .gallery-overlay span{font-size:.8rem;font-weight:700;letter-spacing:.15em;color:#fff;text-transform:uppercase;opacity:0;transform:translateY(8px);transition:opacity .35s,transform .35s;padding:.5rem 1.25rem;border:1.5px solid rgba(255,255,255,.6);border-radius:4px}
-    .gallery-item:hover img{transform:scale(1.08)}
-    .gallery-item:hover .gallery-overlay{background:rgba(37,99,235,.35)}
-    .gallery-item:hover .gallery-overlay span{opacity:1;transform:translateY(0)}
-    @media(max-width:992px){.gallery-grid{grid-template-columns:repeat(2,1fr)}}
-    @media(max-width:600px){.gallery-grid{grid-template-columns:1fr}.gallery-item img{height:240px}}
-    #quote{background:#141414;padding:5rem 1.5rem}
-    .quote-wrapper{max-width:1100px;margin:0 auto;display:grid;grid-template-columns:1.1fr .9fr;gap:3rem;align-items:start}
-    .quote-form{display:flex;flex-direction:column;gap:1.15rem}
-    .quote-form label{font-size:.75rem;font-weight:600;letter-spacing:.08em;text-transform:uppercase;color:#999;display:flex;flex-direction:column;gap:.4rem}
-    .quote-form input,.quote-form textarea{font-family:'Inter',sans-serif;font-size:.95rem;color:#fff;background:#1a1a1a;border:1px solid #333;border-radius:6px;padding:.85rem 1rem;outline:none;transition:border-color .25s,box-shadow .25s;width:100%}
-    .quote-form input::placeholder,.quote-form textarea::placeholder{color:#555}
-    .quote-form input:focus,.quote-form textarea:focus{border-color:#2563eb;box-shadow:0 0 0 3px rgba(37,99,235,.15)}
-    .quote-form textarea{min-height:130px;resize:vertical}
-    .quote-form .btn-submit{font-family:'Inter',sans-serif;font-size:.9rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:#fff;background:#2563eb;border:none;border-radius:6px;padding:1rem;cursor:pointer;width:100%;transition:background .3s,transform .15s,box-shadow .3s;margin-top:.25rem}
-    .quote-form .btn-submit:hover{background:#1d4ed8;box-shadow:0 6px 24px rgba(37,99,235,.35);transform:translateY(-1px)}
-    .contact-card{background:#1a1a1a;border:1px solid #262626;border-radius:12px;padding:2.25rem;display:flex;flex-direction:column;gap:1.75rem}
-    .contact-card .card-title{font-size:1rem;font-weight:700;letter-spacing:.06em;color:#fff;text-transform:uppercase;margin:0;padding-bottom:1rem;border-bottom:1px solid #262626}
-    .contact-item{display:flex;align-items:flex-start;gap:1rem}
-    .contact-item .contact-icon{flex-shrink:0;width:40px;height:40px;background:rgba(37,99,235,.1);border-radius:8px;display:flex;align-items:center;justify-content:center}
-    .contact-item .contact-icon svg{width:18px;height:18px;stroke:#2563eb;fill:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round}
-    .contact-item .contact-label{font-size:.7rem;font-weight:600;letter-spacing:.08em;text-transform:uppercase;color:#666;margin:0 0 .2rem 0}
-    .contact-item .contact-value{font-size:.95rem;color:#fff;margin:0;line-height:1.5}
-    .contact-item a{color:#2563eb;text-decoration:none;transition:color .2s}
-    .contact-item a:hover{color:#60a5fa}
-    .contact-badge{display:flex;align-items:center;gap:.6rem;padding:.75rem 1rem;background:rgba(37,99,235,.06);border:1px solid rgba(37,99,235,.15);border-radius:8px}
-    .contact-badge svg{width:16px;height:16px;stroke:#2563eb;fill:none;stroke-width:2;flex-shrink:0}
-    .contact-badge span{font-size:.8rem;font-weight:500;color:#ccc}
-    .map-link{display:inline-flex;align-items:center;gap:.5rem;font-size:.82rem;font-weight:600;color:#2563eb;text-decoration:none;transition:color .2s}
-    .map-link:hover{color:#60a5fa}
-    .map-link svg{width:14px;height:14px;stroke:currentColor;fill:none;stroke-width:2}
-    @media(max-width:820px){.quote-wrapper{grid-template-columns:1fr}.contact-card{order:-1}}
-    .site-footer{background:#0a0a0a;border-top:1px solid #1a1a1a}
-    .footer-ticker{overflow:hidden;white-space:nowrap;background:#111;border-bottom:1px solid #1a1a1a;padding:.75rem 0}
-    .footer-ticker .ticker-track{display:inline-flex;animation:ticker-scroll 30s linear infinite}
-    .footer-ticker .ticker-track span{font-size:.7rem;font-weight:700;letter-spacing:.2em;text-transform:uppercase;color:#444;padding:0 2rem}
-    @keyframes ticker-scroll{0%{transform:translateX(0)}100%{transform:translateX(-50%)}}
-    .footer-bottom{text-align:center;padding:2rem 1.5rem}
-    .footer-bottom p{font-size:.7rem;font-weight:500;letter-spacing:.1em;color:#555;text-transform:uppercase}
-    .reveal{opacity:0;transform:translateY(30px);transition:opacity .8s,transform .8s}
-    .reveal.visible{opacity:1;transform:translateY(0)}
-    @media(max-width:640px){.hero-content{padding-top:110px}.hero-ctas{flex-direction:column}.btn{justify-content:center;width:100%}.hero-trust{gap:1rem}.hero-trust-item{font-size:.75rem}.section-heading h2{font-size:1.75rem}}
+    /* ── Reset & Base ─────────────────────────────────────────────── */
+    *, *::before, *::after {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+      -webkit-text-size-adjust: 100%;
+    }
+
+    body {
+      font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+      color: #0f172a;
+      background: #ffffff;
+      line-height: 1.6;
+      overflow-x: hidden;
+    }
+
+    a {
+      text-decoration: none;
+      color: inherit;
+    }
+
+    img {
+      max-width: 100%;
+      height: auto;
+      display: block;
+    }
+
+    button {
+      font-family: inherit;
+      cursor: pointer;
+      border: none;
+      background: none;
+    }
+
+    /* ── Animations ───────────────────────────────────────────────── */
+    @keyframes fadeInUp {
+      from {
+        opacity: 0;
+        transform: translateY(30px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+
+    .animate-fade-up {
+      opacity: 0;
+      animation: fadeInUp 0.7s ease-out forwards;
+    }
+
+    .animate-fade-up:nth-child(1) { animation-delay: 0.1s; }
+    .animate-fade-up:nth-child(2) { animation-delay: 0.25s; }
+    .animate-fade-up:nth-child(3) { animation-delay: 0.4s; }
+    .animate-fade-up:nth-child(4) { animation-delay: 0.55s; }
+    .animate-fade-up:nth-child(5) { animation-delay: 0.7s; }
+
+    /* ── Scroll Reveal ───────────────────────────────────────────── */
+    .reveal {
+      opacity: 0;
+      transform: translateY(30px);
+      transition: opacity 0.8s ease, transform 0.8s ease;
+    }
+
+    .reveal.visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    /* ── Sticky Navigation ────────────────────────────────────────── */
+    .nav {
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      z-index: 1000;
+      background: #ffffff;
+      border-bottom: 1px solid #e2e8f0;
+      transition: box-shadow 0.3s ease;
+    }
+
+    .nav.scrolled {
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+    }
+
+    .nav-inner {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 20px;
+      height: 72px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .nav-left {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+
+    .nav-logo {
+      height: 48px;
+      width: auto;
+    }
+
+    .nav-badge {
+      display: inline-flex;
+      align-items: center;
+      background: #1e3a8a;
+      color: #ffffff;
+      font-size: 11px;
+      font-weight: 600;
+      padding: 4px 12px;
+      border-radius: 50px;
+      letter-spacing: 0.02em;
+      white-space: nowrap;
+    }
+
+    .nav-links {
+      display: none;
+      list-style: none;
+      gap: 32px;
+      align-items: center;
+    }
+
+    .nav-links a {
+      font-size: 15px;
+      font-weight: 500;
+      color: #475569;
+      transition: color 0.2s ease;
+      padding: 8px 0;
+    }
+
+    .nav-links a:hover {
+      color: #1e3a8a;
+    }
+
+    .nav-right {
+      display: flex;
+      align-items: center;
+      gap: 16px;
+    }
+
+    .nav-phone {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      background: #dc2626;
+      color: #ffffff;
+      font-size: 14px;
+      font-weight: 700;
+      padding: 10px 20px;
+      border-radius: 50px;
+      transition: background 0.2s ease, transform 0.15s ease;
+      white-space: nowrap;
+      min-height: 44px;
+    }
+
+    .nav-phone:hover {
+      background: #b91c1c;
+      transform: scale(1.03);
+    }
+
+    .nav-phone:active {
+      transform: scale(0.98);
+    }
+
+    /* Hamburger */
+    .hamburger {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      gap: 5px;
+      width: 44px;
+      height: 44px;
+      padding: 10px;
+      cursor: pointer;
+      z-index: 1001;
+    }
+
+    .hamburger span {
+      display: block;
+      width: 24px;
+      height: 2.5px;
+      background: #0f172a;
+      border-radius: 2px;
+      transition: transform 0.3s ease, opacity 0.3s ease;
+    }
+
+    .hamburger.active span:nth-child(1) {
+      transform: translateY(7.5px) rotate(45deg);
+    }
+
+    .hamburger.active span:nth-child(2) {
+      opacity: 0;
+    }
+
+    .hamburger.active span:nth-child(3) {
+      transform: translateY(-7.5px) rotate(-45deg);
+    }
+
+    /* Mobile Menu */
+    .mobile-menu {
+      display: none;
+      position: fixed;
+      top: 72px;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: #ffffff;
+      z-index: 999;
+      padding: 32px 24px;
+      animation: fadeIn 0.2s ease-out;
+    }
+
+    .mobile-menu.open {
+      display: block;
+    }
+
+    .mobile-menu a {
+      display: block;
+      font-size: 20px;
+      font-weight: 600;
+      color: #0f172a;
+      padding: 16px 0;
+      border-bottom: 1px solid #e2e8f0;
+      min-height: 44px;
+    }
+
+    .mobile-menu a:hover {
+      color: #1e3a8a;
+    }
+
+    /* ── Hero Section ─────────────────────────────────────────────── */
+    .hero {
+      position: relative;
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      padding: 100px 20px 60px;
+      overflow: hidden;
+    }
+
+    .hero-bg {
+      position: absolute;
+      inset: 0;
+      z-index: 0;
+    }
+
+    .hero-bg img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: center;
+    }
+
+    .hero-bg::after {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(
+        135deg,
+        rgba(255, 255, 255, 0.92) 0%,
+        rgba(255, 255, 255, 0.85) 40%,
+        rgba(248, 250, 252, 0.80) 100%
+      );
+    }
+
+    .hero-content {
+      position: relative;
+      z-index: 1;
+      max-width: 720px;
+      margin: 0 auto;
+      text-align: center;
+    }
+
+    .hero-headline {
+      font-size: clamp(2rem, 6vw, 3.5rem);
+      font-weight: 900;
+      color: #1e3a8a;
+      line-height: 1.1;
+      letter-spacing: -0.02em;
+      margin-bottom: 16px;
+    }
+
+    .hero-subhead {
+      font-size: clamp(1rem, 3vw, 1.25rem);
+      font-weight: 600;
+      color: #dc2626;
+      margin-bottom: 16px;
+      letter-spacing: 0.01em;
+    }
+
+    .hero-subhead span {
+      margin: 0 6px;
+      opacity: 0.5;
+    }
+
+    .hero-tagline {
+      font-size: clamp(0.95rem, 2.5vw, 1.125rem);
+      color: #475569;
+      line-height: 1.7;
+      margin-bottom: 36px;
+      max-width: 560px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .hero-cta-group {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 14px;
+      margin-bottom: 48px;
+    }
+
+    .btn-primary {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      background: #dc2626;
+      color: #ffffff;
+      font-size: 18px;
+      font-weight: 800;
+      padding: 18px 36px;
+      border-radius: 50px;
+      transition: background 0.2s ease, transform 0.15s ease, box-shadow 0.2s ease;
+      min-height: 56px;
+      width: 100%;
+      max-width: 400px;
+      box-shadow: 0 4px 14px rgba(220, 38, 38, 0.3);
+    }
+
+    .btn-primary:hover {
+      background: #b91c1c;
+      transform: translateY(-2px);
+      box-shadow: 0 6px 20px rgba(220, 38, 38, 0.4);
+    }
+
+    .btn-primary:active {
+      transform: translateY(0);
+    }
+
+    .btn-secondary {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      background: transparent;
+      color: #1e3a8a;
+      font-size: 16px;
+      font-weight: 700;
+      padding: 16px 32px;
+      border-radius: 50px;
+      border: 2.5px solid #1e3a8a;
+      transition: background 0.2s ease, color 0.2s ease, transform 0.15s ease;
+      min-height: 52px;
+      width: 100%;
+      max-width: 400px;
+    }
+
+    .btn-secondary:hover {
+      background: #1e3a8a;
+      color: #ffffff;
+      transform: translateY(-2px);
+    }
+
+    .btn-secondary:active {
+      transform: translateY(0);
+    }
+
+    /* Stats Bar */
+    .hero-stats {
+      display: flex;
+      justify-content: center;
+      gap: 12px;
+      flex-wrap: wrap;
+    }
+
+    .stat-item {
+      background: #ffffff;
+      border: 1px solid #e2e8f0;
+      border-radius: 12px;
+      padding: 14px 20px;
+      text-align: center;
+      min-width: 120px;
+      flex: 1;
+      max-width: 180px;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+    }
+
+    .stat-value {
+      font-size: 1.25rem;
+      font-weight: 800;
+      color: #1e3a8a;
+      line-height: 1.2;
+    }
+
+    .stat-value .star {
+      color: #f59e0b;
+    }
+
+    .stat-label {
+      font-size: 0.8rem;
+      font-weight: 500;
+      color: #475569;
+      margin-top: 2px;
+    }
+
+    /* ── Trust Badges Strip ───────────────────────────────────────── */
+    .trust-strip {
+      background: #f8fafc;
+      border-top: 1px solid #e2e8f0;
+      border-bottom: 1px solid #e2e8f0;
+      padding: 40px 20px;
+    }
+
+    .trust-inner {
+      max-width: 1200px;
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 20px;
+    }
+
+    .trust-badge {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+      padding: 16px 20px;
+      background: #ffffff;
+      border: 1px solid #e2e8f0;
+      border-radius: 12px;
+      transition: box-shadow 0.2s ease, transform 0.15s ease;
+    }
+
+    .trust-badge:hover {
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
+      transform: translateY(-1px);
+    }
+
+    .trust-icon {
+      flex-shrink: 0;
+      width: 44px;
+      height: 44px;
+      background: #eff6ff;
+      border-radius: 12px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .trust-icon svg {
+      width: 22px;
+      height: 22px;
+      color: #1e3a8a;
+    }
+
+    .trust-text {
+      font-size: 15px;
+      font-weight: 600;
+      color: #0f172a;
+      line-height: 1.3;
+    }
+
+    .trust-text small {
+      display: block;
+      font-size: 13px;
+      font-weight: 400;
+      color: #475569;
+      margin-top: 2px;
+    }
+
+    /* ── About Section ────────────────────────────────────────────── */
+    .about-section {
+      padding: 80px 20px;
+      background: #ffffff;
+    }
+
+    .about-inner {
+      max-width: 1100px;
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 48px;
+      align-items: center;
+    }
+
+    .about-photo {
+      position: relative;
+      border-radius: 16px;
+      overflow: hidden;
+      background: #1e3a8a;
+      min-height: 320px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 16px;
+      padding: 40px;
+    }
+
+    .about-photo svg {
+      width: 80px;
+      height: 80px;
+      opacity: 0.3;
+      color: #ffffff;
+    }
+
+    .about-photo span {
+      font-size: 14px;
+      font-weight: 600;
+      color: rgba(255, 255, 255, 0.5);
+      letter-spacing: 0.02em;
+    }
+
+    .about-text h2 {
+      font-size: clamp(1.75rem, 4vw, 2.5rem);
+      font-weight: 800;
+      color: #1e3a8a;
+      margin-bottom: 20px;
+      line-height: 1.15;
+    }
+
+    .about-text p {
+      font-size: 1rem;
+      color: #475569;
+      line-height: 1.8;
+      margin-bottom: 20px;
+    }
+
+    .about-values {
+      list-style: none;
+      padding: 0;
+      margin: 24px 0;
+      display: flex;
+      flex-direction: column;
+      gap: 14px;
+    }
+
+    .about-values li {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      font-size: 15px;
+      font-weight: 500;
+      color: #0f172a;
+    }
+
+    .about-values li svg {
+      flex-shrink: 0;
+      width: 20px;
+      height: 20px;
+      color: #dc2626;
+    }
+
+    .family-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      background: #eff6ff;
+      border: 1px solid #bfdbfe;
+      border-radius: 50px;
+      padding: 10px 20px;
+      font-size: 14px;
+      font-weight: 600;
+      color: #1e3a8a;
+      margin-top: 8px;
+    }
+
+    .family-badge svg {
+      width: 18px;
+      height: 18px;
+      color: #dc2626;
+    }
+
+    /* ── Services Section ─────────────────────────────────────────── */
+    .services-section {
+      padding: 80px 20px;
+      background: #f8fafc;
+    }
+
+    .services-header {
+      text-align: center;
+      margin-bottom: 48px;
+    }
+
+    .services-header h2 {
+      font-size: clamp(1.75rem, 4vw, 2.5rem);
+      font-weight: 800;
+      color: #1e3a8a;
+      margin-bottom: 12px;
+      line-height: 1.15;
+    }
+
+    .services-header p {
+      font-size: 1rem;
+      color: #475569;
+      max-width: 560px;
+      margin: 0 auto;
+    }
+
+    .services-grid {
+      max-width: 1100px;
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 24px;
+    }
+
+    .service-card {
+      background: #ffffff;
+      border: 1px solid #e2e8f0;
+      border-radius: 16px;
+      padding: 32px 28px;
+      transition: box-shadow 0.3s ease, transform 0.2s ease, border-color 0.3s ease;
+    }
+
+    .service-card:hover {
+      box-shadow: 0 8px 30px rgba(0, 0, 0, 0.08);
+      transform: translateY(-4px);
+      border-color: #1e3a8a;
+    }
+
+    .service-icon {
+      width: 56px;
+      height: 56px;
+      background: #eff6ff;
+      border-radius: 14px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 20px;
+    }
+
+    .service-icon svg {
+      width: 28px;
+      height: 28px;
+      color: #1e3a8a;
+      stroke: currentColor;
+      fill: none;
+      stroke-width: 2;
+      stroke-linecap: round;
+      stroke-linejoin: round;
+    }
+
+    .service-card h3 {
+      font-size: 1.1rem;
+      font-weight: 700;
+      color: #0f172a;
+      margin-bottom: 8px;
+    }
+
+    .service-card p {
+      font-size: 0.95rem;
+      color: #475569;
+      line-height: 1.6;
+    }
+
+    .motorsports-callout {
+      max-width: 1100px;
+      margin: 40px auto 0;
+      background: #1e3a8a;
+      border-radius: 16px;
+      padding: 32px 36px;
+      display: flex;
+      align-items: center;
+      gap: 20px;
+      color: #ffffff;
+    }
+
+    .motorsports-callout svg {
+      flex-shrink: 0;
+      width: 48px;
+      height: 48px;
+      opacity: 0.8;
+    }
+
+    .motorsports-callout h3 {
+      font-size: 1.15rem;
+      font-weight: 700;
+      margin-bottom: 4px;
+    }
+
+    .motorsports-callout p {
+      font-size: 0.95rem;
+      color: rgba(255, 255, 255, 0.75);
+      line-height: 1.5;
+    }
+
+    /* ── Reviews Section ──────────────────────────────────────────── */
+    .reviews-section {
+      padding: 80px 20px;
+      background: #ffffff;
+    }
+
+    .reviews-container {
+      max-width: 1100px;
+      margin: 0 auto;
+    }
+
+    .reviews-header {
+      text-align: center;
+      margin-bottom: 48px;
+    }
+
+    .reviews-header h2 {
+      font-size: clamp(1.75rem, 4vw, 2.5rem);
+      font-weight: 800;
+      color: #1e3a8a;
+      margin-bottom: 12px;
+    }
+
+    .google-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      background: #f8fafc;
+      border: 1px solid #e2e8f0;
+      border-radius: 50px;
+      padding: 10px 24px;
+      margin-bottom: 40px;
+    }
+
+    .google-badge .g-score {
+      font-size: 1.5rem;
+      font-weight: 800;
+      color: #1e3a8a;
+    }
+
+    .google-badge .g-stars {
+      color: #f59e0b;
+      font-size: 1.1rem;
+      letter-spacing: 2px;
+    }
+
+    .google-badge .g-label {
+      font-size: 13px;
+      font-weight: 500;
+      color: #475569;
+    }
+
+    .reviews-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 24px;
+      margin-bottom: 40px;
+    }
+
+    .review-card {
+      background: #f8fafc;
+      border: 1px solid #e2e8f0;
+      border-radius: 16px;
+      padding: 28px 24px;
+      transition: box-shadow 0.3s ease, transform 0.2s ease;
+    }
+
+    .review-card:hover {
+      box-shadow: 0 6px 24px rgba(0, 0, 0, 0.06);
+      transform: translateY(-3px);
+    }
+
+    .review-stars {
+      color: #f59e0b;
+      font-size: 16px;
+      letter-spacing: 2px;
+      margin-bottom: 14px;
+    }
+
+    .review-text {
+      font-size: 15px;
+      color: #475569;
+      line-height: 1.7;
+      margin-bottom: 16px;
+    }
+
+    .review-author {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .review-author-avatar {
+      width: 36px;
+      height: 36px;
+      background: #1e3a8a;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 14px;
+      font-weight: 700;
+      color: #ffffff;
+    }
+
+    .review-author-info {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .review-author-name {
+      font-size: 14px;
+      font-weight: 600;
+      color: #0f172a;
+    }
+
+    .review-author-location {
+      font-size: 12px;
+      color: #94a3b8;
+    }
+
+    .reviews-cta {
+      text-align: center;
+    }
+
+    .reviews-cta a {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      font-size: 15px;
+      font-weight: 600;
+      color: #1e3a8a;
+      padding: 12px 28px;
+      border: 2px solid #1e3a8a;
+      border-radius: 50px;
+      transition: background 0.2s ease, color 0.2s ease;
+    }
+
+    .reviews-cta a:hover {
+      background: #1e3a8a;
+      color: #ffffff;
+    }
+
+    /* ── Contact Section ──────────────────────────────────────────── */
+    .contact-section {
+      padding: 80px 20px;
+      background: #f8fafc;
+    }
+
+    .contact-inner {
+      max-width: 1100px;
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 40px;
+    }
+
+    .contact-header {
+      text-align: center;
+      margin-bottom: 16px;
+    }
+
+    .contact-header h2 {
+      font-size: clamp(1.75rem, 4vw, 2.5rem);
+      font-weight: 800;
+      color: #1e3a8a;
+      margin-bottom: 12px;
+    }
+
+    .contact-header p {
+      font-size: 1rem;
+      color: #475569;
+      max-width: 520px;
+      margin: 0 auto;
+    }
+
+    .contact-grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 32px;
+    }
+
+    .contact-form {
+      background: #ffffff;
+      border: 1px solid #e2e8f0;
+      border-radius: 16px;
+      padding: 36px 32px;
+    }
+
+    .contact-form label {
+      display: block;
+      font-size: 13px;
+      font-weight: 600;
+      color: #475569;
+      margin-bottom: 6px;
+      text-transform: uppercase;
+      letter-spacing: 0.04em;
+    }
+
+    .contact-form input,
+    .contact-form textarea {
+      width: 100%;
+      font-family: 'Inter', sans-serif;
+      font-size: 15px;
+      color: #0f172a;
+      background: #f8fafc;
+      border: 1px solid #e2e8f0;
+      border-radius: 10px;
+      padding: 14px 16px;
+      margin-bottom: 20px;
+      outline: none;
+      transition: border-color 0.2s ease, box-shadow 0.2s ease;
+    }
+
+    .contact-form input:focus,
+    .contact-form textarea:focus {
+      border-color: #1e3a8a;
+      box-shadow: 0 0 0 3px rgba(30, 58, 138, 0.1);
+    }
+
+    .contact-form input::placeholder,
+    .contact-form textarea::placeholder {
+      color: #94a3b8;
+    }
+
+    .contact-form textarea {
+      min-height: 120px;
+      resize: vertical;
+    }
+
+    .contact-form .btn-submit {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      width: 100%;
+      font-family: 'Inter', sans-serif;
+      font-size: 16px;
+      font-weight: 700;
+      color: #ffffff;
+      background: #dc2626;
+      border: none;
+      border-radius: 50px;
+      padding: 16px 32px;
+      cursor: pointer;
+      transition: background 0.2s ease, transform 0.15s ease, box-shadow 0.2s ease;
+      min-height: 52px;
+      box-shadow: 0 4px 14px rgba(220, 38, 38, 0.3);
+    }
+
+    .contact-form .btn-submit:hover {
+      background: #b91c1c;
+      transform: translateY(-2px);
+      box-shadow: 0 6px 20px rgba(220, 38, 38, 0.4);
+    }
+
+    .contact-info-card {
+      background: #ffffff;
+      border: 1px solid #e2e8f0;
+      border-radius: 16px;
+      padding: 36px 32px;
+      display: flex;
+      flex-direction: column;
+      gap: 24px;
+    }
+
+    .contact-info-card h3 {
+      font-size: 1.1rem;
+      font-weight: 700;
+      color: #0f172a;
+      padding-bottom: 16px;
+      border-bottom: 1px solid #e2e8f0;
+    }
+
+    .contact-info-item {
+      display: flex;
+      align-items: flex-start;
+      gap: 14px;
+    }
+
+    .contact-info-icon {
+      flex-shrink: 0;
+      width: 44px;
+      height: 44px;
+      background: #eff6ff;
+      border-radius: 12px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .contact-info-icon svg {
+      width: 20px;
+      height: 20px;
+      color: #1e3a8a;
+      stroke: currentColor;
+      fill: none;
+      stroke-width: 2;
+      stroke-linecap: round;
+      stroke-linejoin: round;
+    }
+
+    .contact-info-label {
+      font-size: 12px;
+      font-weight: 600;
+      color: #94a3b8;
+      text-transform: uppercase;
+      letter-spacing: 0.04em;
+      margin-bottom: 2px;
+    }
+
+    .contact-info-value {
+      font-size: 15px;
+      font-weight: 500;
+      color: #0f172a;
+      line-height: 1.4;
+    }
+
+    .contact-info-value a {
+      color: #dc2626;
+      font-weight: 600;
+      transition: color 0.2s ease;
+    }
+
+    .contact-info-value a:hover {
+      color: #b91c1c;
+    }
+
+    /* ── Footer ───────────────────────────────────────────────────── */
+    .site-footer {
+      background: #1e3a8a;
+      color: #ffffff;
+      padding: 56px 20px 32px;
+    }
+
+    .footer-inner {
+      max-width: 1100px;
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 40px;
+    }
+
+    .footer-brand h3 {
+      font-size: 1.25rem;
+      font-weight: 800;
+      margin-bottom: 10px;
+    }
+
+    .footer-brand p {
+      font-size: 14px;
+      color: rgba(255, 255, 255, 0.6);
+      line-height: 1.6;
+      max-width: 320px;
+    }
+
+    .footer-col h4 {
+      font-size: 13px;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+      margin-bottom: 16px;
+      color: rgba(255, 255, 255, 0.8);
+    }
+
+    .footer-col ul {
+      list-style: none;
+      padding: 0;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+
+    .footer-col ul li {
+      font-size: 14px;
+      color: rgba(255, 255, 255, 0.55);
+    }
+
+    .footer-col ul li a {
+      color: rgba(255, 255, 255, 0.55);
+      transition: color 0.2s ease;
+    }
+
+    .footer-col ul li a:hover {
+      color: #ffffff;
+    }
+
+    .footer-bottom {
+      max-width: 1100px;
+      margin: 40px auto 0;
+      padding-top: 24px;
+      border-top: 1px solid rgba(255, 255, 255, 0.15);
+      text-align: center;
+      font-size: 13px;
+      color: rgba(255, 255, 255, 0.4);
+    }
+
+    /* ── Responsive: Tablet (768px) ───────────────────────────────── */
+    @media (min-width: 768px) {
+      .hero-cta-group {
+        flex-direction: row;
+        justify-content: center;
+      }
+
+      .btn-primary,
+      .btn-secondary {
+        width: auto;
+      }
+
+      .trust-inner {
+        grid-template-columns: 1fr 1fr;
+      }
+
+      .hero {
+        min-height: 90vh;
+        padding: 120px 40px 80px;
+      }
+
+      .about-inner {
+        grid-template-columns: 1fr 1fr;
+        gap: 56px;
+      }
+
+      .contact-grid {
+        grid-template-columns: 1.1fr 0.9fr;
+      }
+
+      .footer-inner {
+        grid-template-columns: 1.5fr 1fr 1fr;
+      }
+    }
+
+    /* ── Responsive: Desktop (1024px) ─────────────────────────────── */
+    @media (min-width: 1024px) {
+      .nav-links {
+        display: flex;
+      }
+
+      .hamburger {
+        display: none;
+      }
+
+      .nav-inner {
+        padding: 0 40px;
+      }
+
+      .hero {
+        min-height: 85vh;
+        padding: 140px 40px 100px;
+      }
+
+      .hero-content {
+        text-align: center;
+      }
+
+      .trust-inner {
+        grid-template-columns: repeat(4, 1fr);
+        gap: 24px;
+      }
+
+      .trust-strip {
+        padding: 48px 40px;
+      }
+
+      .services-grid {
+        grid-template-columns: repeat(3, 1fr);
+      }
+
+      .reviews-grid {
+        grid-template-columns: repeat(3, 1fr);
+      }
+    }
+
+    /* ── Mobile (max 640px) ───────────────────────────────────────── */
+    @media (max-width: 640px) {
+      .services-grid,
+      .reviews-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .motorsports-callout {
+        flex-direction: column;
+        text-align: center;
+        padding: 28px 24px;
+      }
+    }
   </style>
 </head>
 <body>
-  <nav class="nav" id="nav">
-    <a href="#" class="nav-logo"><div class="nav-logo-icon">C</div><div class="nav-logo-text">Cumba<span>'</span>s</div></a>
-    <ul class="nav-links">
-      <li><a href="#services">Services</a></li>
-      <li><a href="#gallery">Gallery</a></li>
-      <li><a href="#reviews">Reviews</a></li>
-      <li><a href="#quote">Contact</a></li>
-    </ul>
-    <a href="tel:8137480049" class="nav-phone">
-      <svg viewBox="0 0 24 24"><path d="M6.62 10.79a15.053 15.053 0 006.59 6.59l2.2-2.2a1.003 1.003 0 011.01-.24c1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.1.31.03.66-.25 1.01l-2.2 2.2z"/></svg>
-      (813) 748-0049
-    </a>
-    <button class="hamburger" id="hamburger" aria-label="Toggle menu"><span></span><span></span><span></span></button>
+
+  <!-- ═══════════════════════════════════════════════════════════════
+       NAVIGATION
+       ═══════════════════════════════════════════════════════════════ -->
+  <nav class="nav" id="mainNav">
+    <div class="nav-inner">
+      <div class="nav-left">
+        <img src="assets/logo.png" alt="Cumba's Mobile Auto Solutions" class="nav-logo">
+        <span class="nav-badge">Family-Owned</span>
+      </div>
+
+      <ul class="nav-links">
+        <li><a href="#services">Services</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#reviews">Reviews</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+
+      <div class="nav-right">
+        <a href="tel:8137480049" class="nav-phone" aria-label="Call us at (813) 748-0049">
+          <span>&#128222;</span> (813) 748-0049
+        </a>
+        <button class="hamburger" id="hamburger" aria-label="Toggle menu" aria-expanded="false">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </div>
   </nav>
 
+  <!-- Mobile Menu -->
   <div class="mobile-menu" id="mobileMenu">
-    <a href="#services">Services</a>
-    <a href="#gallery">Gallery</a>
-    <a href="#reviews">Reviews</a>
-    <a href="#quote">Contact</a>
-    <a href="tel:8137480049" class="mobile-phone">
-      <svg width="22" height="22" viewBox="0 0 24 24" fill="#2563eb"><path d="M6.62 10.79a15.053 15.053 0 006.59 6.59l2.2-2.2a1.003 1.003 0 011.01-.24c1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.1.31.03.66-.25 1.01l-2.2 2.2z"/></svg>
-      (813) 748-0049
-    </a>
+    <a href="#services" onclick="closeMenu()">Services</a>
+    <a href="#about" onclick="closeMenu()">About</a>
+    <a href="#reviews" onclick="closeMenu()">Reviews</a>
+    <a href="#contact" onclick="closeMenu()">Contact</a>
   </div>
 
-  <section class="hero" id="hero">
-    <div class="hero-bg"><img src="assets/hero-candidate-5.jpg" alt="Cumba's Mobile Auto Solutions — mobile mechanic working on vehicle in Tampa" loading="eager"></div>
+  <!-- ═══════════════════════════════════════════════════════════════
+       HERO SECTION
+       ═══════════════════════════════════════════════════════════════ -->
+  <section class="hero">
+    <div class="hero-bg">
+      <img src="assets/hero-candidate-5.jpg" alt="Cumba's Mobile Auto Solutions - mobile mechanic servicing a vehicle" loading="eager">
+    </div>
+
     <div class="hero-content">
-      <div class="hero-badge"><div class="hero-badge-dot"></div>Available 24/7 &mdash; Serving the Tampa Bay Area</div>
-      <h1 class="hero-heading">We Bring the<span>Shop to You.</span></h1>
-      <p class="hero-tagline">Tampa Bay's top-rated mobile mechanic &mdash; <strong>380+ five-star reviews</strong>. Full service at your doorstep, any time, any place.</p>
-      <p class="hero-sub-tagline">Licensed, Bonded &amp; Insured in Florida</p>
-      <div class="hero-ctas">
-        <a href="#quote" class="btn btn-primary"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 01-2 2H7l-4 4V5a2 2 0 012-2h14a2 2 0 012 2z"/></svg>Get a Quote</a>
-        <a href="tel:8137480049" class="btn btn-outline"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M6.62 10.79a15.053 15.053 0 006.59 6.59l2.2-2.2a1.003 1.003 0 011.01-.24c1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.1.31.03.66-.25 1.01l-2.2 2.2z"/></svg>Call or Text</a>
+      <h1 class="hero-headline animate-fade-up">Tampa's Family Mobile Mechanic</h1>
+
+      <p class="hero-subhead animate-fade-up">
+        Father &amp; Son Team <span>&bull;</span> Honest Work <span>&bull;</span> Fair Prices
+      </p>
+
+      <p class="hero-tagline animate-fade-up">
+        We're not a corporate chain&mdash;we're Tampa locals who care about your car as much as you do.
+      </p>
+
+      <div class="hero-cta-group animate-fade-up">
+        <a href="tel:8137480049" class="btn-primary">
+          &#128222; Call Now &mdash; (813) 748-0049
+        </a>
+        <a href="#contact" class="btn-secondary">
+          Get a Free Quote
+        </a>
       </div>
-      <div class="hero-trust">
-        <div class="hero-trust-item"><svg viewBox="0 0 24 24" fill="#facc15"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg><span><strong>4.9</strong> on Google &mdash; 380+ reviews</span></div>
-        <div class="hero-trust-item"><svg viewBox="0 0 24 24" fill="none" stroke="#22c55e" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg><span>Licensed &amp; Insured</span></div>
-        <div class="hero-trust-item"><svg viewBox="0 0 24 24" fill="none" stroke="#60a5fa" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg><span>Same-day service</span></div>
+
+      <div class="hero-stats animate-fade-up">
+        <div class="stat-item">
+          <div class="stat-value">4.9 <span class="star">&#9733;</span></div>
+          <div class="stat-label">Google Rating</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-value">380+</div>
+          <div class="stat-label">Reviews</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-value">30 Min</div>
+          <div class="stat-label">Response</div>
+        </div>
       </div>
     </div>
-    <div class="marquee"><div class="marquee-track">
-      <div class="marquee-content"><span class="marquee-item">Brakes</span><span class="marquee-sep">&#9670;</span><span class="marquee-item">Oil Change</span><span class="marquee-sep">&#9670;</span><span class="marquee-item">Diagnostics</span><span class="marquee-sep">&#9670;</span><span class="marquee-item">A/C Repair</span><span class="marquee-sep">&#9670;</span><span class="marquee-item">Battery</span><span class="marquee-sep">&#9670;</span><span class="marquee-item">Alternator</span><span class="marquee-sep">&#9670;</span><span class="marquee-item">Starter</span><span class="marquee-sep">&#9670;</span><span class="marquee-item">Engine</span><span class="marquee-sep">&#9670;</span><span class="marquee-item">Transmission</span><span class="marquee-sep">&#9670;</span><span class="marquee-item">Suspension</span><span class="marquee-sep">&#9670;</span><span class="marquee-item">Tune-Up</span><span class="marquee-sep">&#9670;</span><span class="marquee-item">Belts &amp; Hoses</span><span class="marquee-sep">&#9670;</span></div>
-      <div class="marquee-content"><span class="marquee-item">Brakes</span><span class="marquee-sep">&#9670;</span><span class="marquee-item">Oil Change</span><span class="marquee-sep">&#9670;</span><span class="marquee-item">Diagnostics</span><span class="marquee-sep">&#9670;</span><span class="marquee-item">A/C Repair</span><span class="marquee-sep">&#9670;</span><span class="marquee-item">Battery</span><span class="marquee-sep">&#9670;</span><span class="marquee-item">Alternator</span><span class="marquee-sep">&#9670;</span><span class="marquee-item">Starter</span><span class="marquee-sep">&#9670;</span><span class="marquee-item">Engine</span><span class="marquee-sep">&#9670;</span><span class="marquee-item">Transmission</span><span class="marquee-sep">&#9670;</span><span class="marquee-item">Suspension</span><span class="marquee-sep">&#9670;</span><span class="marquee-item">Tune-Up</span><span class="marquee-sep">&#9670;</span><span class="marquee-item">Belts &amp; Hoses</span><span class="marquee-sep">&#9670;</span></div>
-    </div></div>
   </section>
 
+  <!-- ═══════════════════════════════════════════════════════════════
+       TRUST BADGES STRIP
+       ═══════════════════════════════════════════════════════════════ -->
+  <section class="trust-strip">
+    <div class="trust-inner">
+
+      <div class="trust-badge">
+        <div class="trust-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/>
+            <polyline points="9 22 9 12 15 12 15 22"/>
+          </svg>
+        </div>
+        <div class="trust-text">
+          Family-Owned &amp; Operated
+          <small>Father &amp; son, serving Tampa</small>
+        </div>
+      </div>
+
+      <div class="trust-badge">
+        <div class="trust-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="12" cy="12" r="10"/>
+            <polyline points="12 6 12 12 16 14"/>
+          </svg>
+        </div>
+        <div class="trust-text">
+          30 Min – 2 Hour Response
+          <small>Fast service, every time</small>
+        </div>
+      </div>
+
+      <div class="trust-badge">
+        <div class="trust-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+            <polyline points="9 12 11 14 15 10"/>
+          </svg>
+        </div>
+        <div class="trust-text">
+          Fair Pricing, No Markup
+          <small>No dealership prices here</small>
+        </div>
+      </div>
+
+      <div class="trust-badge">
+        <div class="trust-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/>
+          </svg>
+        </div>
+        <div class="trust-text">
+          European &amp; Domestic Specialists
+          <small>All makes and models</small>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════════════════════════
+       ABOUT SECTION
+       ═══════════════════════════════════════════════════════════════ -->
+  <section class="about-section" id="about">
+    <div class="about-inner">
+
+      <div class="about-photo reveal">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+          <circle cx="12" cy="12" r="10"/>
+          <path d="M14.31 8l5.74 9.94M9.69 8h11.48M7.38 12l5.74-9.94M9.69 16L3.95 6.06M14.31 16H2.83M16.62 12l-5.74 9.94"/>
+        </svg>
+        <span>Father &amp; Son Photo Coming Soon</span>
+      </div>
+
+      <div class="about-text reveal">
+        <h2>More Than Just Mechanics</h2>
+        <p>
+          We're the Cumba family&mdash;a father and son team who believe car repair should be honest, affordable, and convenient. We started this business because we were tired of seeing people overpay at dealerships and chain shops for work we could do better, faster, and for less.
+        </p>
+        <p>
+          When we pull up to your driveway, you're not getting a stranger&mdash;you're getting family. We explain what's wrong in plain English, we only fix what needs fixing, and we stand behind every job.
+        </p>
+
+        <ul class="about-values">
+          <li>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+            No upselling &mdash; only honest recommendations
+          </li>
+          <li>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+            Fair, transparent pricing every time
+          </li>
+          <li>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+            We come to you &mdash; home, office, or roadside
+          </li>
+          <li>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+            European &amp; domestic expertise
+          </li>
+        </ul>
+
+        <div class="family-badge">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/></svg>
+          Family-owned since Day One
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════════════════════════
+       SERVICES SECTION
+       ═══════════════════════════════════════════════════════════════ -->
   <section class="services-section" id="services">
-    <div class="services-header reveal"><h2>SERVICES</h2><div class="accent-line"></div></div>
+    <div class="services-header reveal">
+      <h2>From Street Cars to Race Bikes</h2>
+      <p>Full-service mobile repair for domestic, import, and European vehicles&mdash;plus motorsports builds.</p>
+    </div>
+
     <div class="services-grid">
-      <div class="service-card reveal"><div class="icon-wrap"><svg viewBox="0 0 24 24"><line x1="12" y1="2" x2="12" y2="22"/><polyline points="8 6 12 2 16 6"/><polyline points="8 18 12 22 16 18"/><line x1="2" y1="12" x2="22" y2="12"/><polyline points="6 8 2 12 6 16"/><polyline points="18 8 22 12 18 16"/><line x1="4.93" y1="4.93" x2="19.07" y2="19.07"/><line x1="19.07" y1="4.93" x2="4.93" y2="19.07"/></svg></div><h3>A/C SERVICE</h3><p>Stay cool in the Florida heat</p></div>
-      <div class="service-card reveal"><div class="icon-wrap"><svg viewBox="0 0 24 24"><rect x="1" y="6" width="18" height="14" rx="2"/><line x1="23" y1="10" x2="23" y2="16"/><path d="M11 10l-3 5h4l-3 5"/></svg></div><h3>BATTERY SWAP</h3><p>Called at 6 AM? We're there in 30 min</p></div>
-      <div class="service-card reveal"><div class="icon-wrap"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><circle cx="12" cy="12" r="4"/><circle cx="12" cy="12" r="1"/><line x1="12" y1="2" x2="12" y2="5"/><line x1="12" y1="19" x2="12" y2="22"/><line x1="2" y1="12" x2="5" y2="12"/><line x1="19" y1="12" x2="22" y2="12"/></svg></div><h3>BRAKE REPAIR</h3><p>Rotors, pads &amp; caliper service</p></div>
-      <div class="service-card reveal"><div class="icon-wrap"><svg viewBox="0 0 24 24"><rect x="2" y="4" width="20" height="13" rx="2"/><line x1="2" y1="20" x2="22" y2="20"/><polyline points="7 10 10 8 13 12 17 9"/></svg></div><h3>DIAGNOSTICS</h3><p>Advanced computer scanning</p></div>
-      <div class="service-card reveal"><div class="icon-wrap"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="7"/><circle cx="12" cy="12" r="3"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg></div><h3>ENGINE WORK</h3><p>Precision repairs under the hood</p></div>
-      <div class="service-card reveal"><div class="icon-wrap"><svg viewBox="0 0 24 24"><path d="M12 2C12 2 6 9 6 14a6 6 0 0 0 12 0C18 9 12 2 12 2z"/><path d="M12 18a2 2 0 0 1-2-2c0-1.1 2-3 2-3s2 1.9 2 3a2 2 0 0 1-2 2z"/></svg></div><h3>OIL CHANGE</h3><p>Keep your engine running smooth</p></div>
+
+      <div class="service-card reveal">
+        <div class="service-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><circle cx="12" cy="12" r="4"/><line x1="12" y1="2" x2="12" y2="5"/><line x1="12" y1="19" x2="12" y2="22"/><line x1="2" y1="12" x2="5" y2="12"/><line x1="19" y1="12" x2="22" y2="12"/></svg>
+        </div>
+        <h3>Brake Service</h3>
+        <p>Pads, rotors, calipers, and fluid flush. We handle the full brake system so you stop with confidence.</p>
+      </div>
+
+      <div class="service-card reveal">
+        <div class="service-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><line x1="12" y1="2" x2="12" y2="22"/><polyline points="8 6 12 2 16 6"/><polyline points="8 18 12 22 16 18"/><line x1="2" y1="12" x2="22" y2="12"/><polyline points="6 8 2 12 6 16"/><polyline points="18 8 22 12 18 16"/></svg>
+        </div>
+        <h3>A/C Repair</h3>
+        <p>Stay cool in the Florida heat. Recharge, leak repair, compressor replacement, and full system diagnostics.</p>
+      </div>
+
+      <div class="service-card reveal">
+        <div class="service-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><rect x="1" y="6" width="18" height="14" rx="2"/><line x1="23" y1="10" x2="23" y2="16"/></svg>
+        </div>
+        <h3>Battery Replacement</h3>
+        <p>Dead battery at 6 AM? We'll be there in 30 minutes with a fresh one installed and tested.</p>
+      </div>
+
+      <div class="service-card reveal">
+        <div class="service-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><rect x="2" y="4" width="20" height="13" rx="2"/><line x1="2" y1="20" x2="22" y2="20"/><polyline points="7 10 10 8 13 12 17 9"/></svg>
+        </div>
+        <h3>Engine Diagnostics</h3>
+        <p>Advanced OBD-II scanning, check engine light diagnosis, and comprehensive system analysis.</p>
+      </div>
+
+      <div class="service-card reveal">
+        <div class="service-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2C12 2 6 9 6 14a6 6 0 0 0 12 0C18 9 12 2 12 2z"/></svg>
+        </div>
+        <h3>Oil Change</h3>
+        <p>Conventional, synthetic blend, or full synthetic&mdash;with filter and multi-point inspection included.</p>
+      </div>
+
+      <div class="service-card reveal">
+        <div class="service-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><circle cx="12" cy="12" r="7"/><circle cx="12" cy="12" r="3"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/></svg>
+        </div>
+        <h3>European Import Specialists</h3>
+        <p>BMW, Mercedes, Audi, VW, and more. Factory-level diagnostics without the dealership price tag.</p>
+      </div>
+
+    </div>
+
+    <div class="motorsports-callout reveal">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+        <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/>
+      </svg>
+      <div>
+        <h3>Motorsports &amp; Performance Builds</h3>
+        <p>From track-day prep to full race bike builds&mdash;we bring the same precision and passion to the performance world.</p>
+      </div>
     </div>
   </section>
 
-  <section id="gallery">
-    <div class="section-heading reveal"><h2>Gallery</h2><span class="accent-line"></span></div>
-    <div class="gallery-grid">
-      <div class="gallery-item reveal"><img src="assets/gallery-1-C8dFNT04.jpg" alt="Mobile auto repair work" loading="lazy"><div class="gallery-overlay"><span>See It In Action</span></div></div>
-      <div class="gallery-item reveal"><img src="assets/gallery-2-B0jfZ_7X.jpg" alt="On-site vehicle service" loading="lazy"><div class="gallery-overlay"><span>See It In Action</span></div></div>
-      <div class="gallery-item reveal"><img src="assets/gallery-3-BDSie-g6.jpg" alt="Engine diagnostics" loading="lazy"><div class="gallery-overlay"><span>See It In Action</span></div></div>
-      <div class="gallery-item reveal"><img src="assets/gallery-4-C--W6mG-.jpg" alt="Brake service completed" loading="lazy"><div class="gallery-overlay"><span>See It In Action</span></div></div>
-      <div class="gallery-item reveal"><img src="assets/gallery-5-HGj4FoJy.jpg" alt="Mobile mechanic at work" loading="lazy"><div class="gallery-overlay"><span>See It In Action</span></div></div>
-      <div class="gallery-item reveal"><img src="assets/gallery-6-BENdFqIL.jpg" alt="Professional auto repair" loading="lazy"><div class="gallery-overlay"><span>See It In Action</span></div></div>
-    </div>
-  </section>
-
+  <!-- ═══════════════════════════════════════════════════════════════
+       REVIEWS SECTION
+       ═══════════════════════════════════════════════════════════════ -->
   <section class="reviews-section" id="reviews">
     <div class="reviews-container">
-      <div class="reviews-heading reveal"><h2>REVIEWS</h2><div class="accent-line"></div></div>
-      <div class="google-rating-badge reveal">
-        <div class="google-rating-score"><span class="score">4.9</span><div class="google-rating-meta"><span class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</span><span class="label">Google Rating</span></div></div>
-        <span class="verified">380+ verified reviews</span>
+      <div class="reviews-header reveal">
+        <h2>What Tampa Says About Us</h2>
+        <div class="google-badge">
+          <span class="g-score">4.9</span>
+          <span class="g-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</span>
+          <span class="g-label">380+ Google Reviews</span>
+        </div>
       </div>
+
       <div class="reviews-grid">
-        <div class="review-card reveal"><span class="quote-mark">&ldquo;</span><div class="card-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div><p class="card-text">A/C was blowing hot in the Florida heat. Cumba came to my office, fixed it during my lunch break. Five stars!</p><span class="card-author">Jennifer M.</span></div>
-        <div class="review-card reveal"><span class="quote-mark">&ldquo;</span><div class="card-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div><p class="card-text">Called at 6 AM with a dead battery and Cumba was there within 30 minutes. Incredible service and fair pricing.</p><span class="card-author">Marcus T.</span></div>
-        <div class="review-card reveal"><span class="quote-mark">&ldquo;</span><div class="card-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div><p class="card-text">Fixed my truck in 2 hours, feels brand new. Best mobile mechanic in Tampa hands down!</p><span class="card-author">David R.</span></div>
-        <div class="review-card reveal"><span class="quote-mark">&ldquo;</span><div class="card-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div><p class="card-text">Had my brakes and rotors replaced in my driveway. Saved me a fortune compared to the dealership.</p><span class="card-author">Sarah L.</span></div>
-        <div class="review-card reveal"><span class="quote-mark">&ldquo;</span><div class="card-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div><p class="card-text">I've used Cumba's three times now. Always on time, always fair, always gets it right the first time.</p><span class="card-author">Amanda W.</span></div>
-        <div class="review-card reveal"><span class="quote-mark">&ldquo;</span><div class="card-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div><p class="card-text">Very professional and honest mechanic. Diagnosed the problem quickly and had my car running perfectly same day.</p><span class="card-author">Carlos G.</span></div>
+
+        <div class="review-card reveal">
+          <div class="review-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+          <p class="review-text">A/C was blowing hot in the Florida heat. Cumba came to my office, fixed it during my lunch break. Saved me a whole day at the shop!</p>
+          <div class="review-author">
+            <div class="review-author-avatar">JM</div>
+            <div class="review-author-info">
+              <span class="review-author-name">Jennifer M.</span>
+              <span class="review-author-location">Carrollwood, Tampa</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="review-card reveal">
+          <div class="review-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+          <p class="review-text">Called at 6 AM with a dead battery and Cumba was there within 30 minutes. Incredible service and fair pricing. My go-to mechanic now.</p>
+          <div class="review-author">
+            <div class="review-author-avatar">MT</div>
+            <div class="review-author-info">
+              <span class="review-author-name">Marcus T.</span>
+              <span class="review-author-location">Brandon, FL</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="review-card reveal">
+          <div class="review-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+          <p class="review-text">Fixed my truck in 2 hours, feels brand new. Best mobile mechanic in Tampa hands down! Honest, fast, and very professional.</p>
+          <div class="review-author">
+            <div class="review-author-avatar">DR</div>
+            <div class="review-author-info">
+              <span class="review-author-name">David R.</span>
+              <span class="review-author-location">Valrico, FL</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="review-card reveal">
+          <div class="review-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+          <p class="review-text">Had my brakes and rotors replaced in my driveway. Saved me a fortune compared to the dealership. Will definitely use again.</p>
+          <div class="review-author">
+            <div class="review-author-avatar">SL</div>
+            <div class="review-author-info">
+              <span class="review-author-name">Sarah L.</span>
+              <span class="review-author-location">Riverview, FL</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="review-card reveal">
+          <div class="review-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+          <p class="review-text">I've used Cumba's three times now. Always on time, always fair, always gets it right the first time. True family business values.</p>
+          <div class="review-author">
+            <div class="review-author-avatar">AW</div>
+            <div class="review-author-info">
+              <span class="review-author-name">Amanda W.</span>
+              <span class="review-author-location">South Tampa</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="review-card reveal">
+          <div class="review-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+          <p class="review-text">Very professional and honest mechanic. Diagnosed the problem quickly and had my car running perfectly same day. Highly recommend!</p>
+          <div class="review-author">
+            <div class="review-author-avatar">CG</div>
+            <div class="review-author-info">
+              <span class="review-author-name">Carlos G.</span>
+              <span class="review-author-location">Town 'n' Country, Tampa</span>
+            </div>
+          </div>
+        </div>
+
       </div>
-      <div class="reviews-cta reveal"><a href="https://www.google.com/maps/place/Cumba's+Mobile+Auto+Solutions/" target="_blank" rel="noopener">Read All on Google</a></div>
+
+      <div class="reviews-cta reveal">
+        <a href="https://www.google.com/maps/place/Cumba's+Mobile+Auto+Solutions/" target="_blank" rel="noopener">Read All Reviews on Google &rarr;</a>
+      </div>
     </div>
   </section>
 
-  <section id="quote">
-    <div class="section-heading reveal"><h2>Get a Quote</h2><span class="accent-line"></span><p class="subtext">Describe your vehicle issue and we'll respond with an honest, no-obligation quote.</p></div>
-    <div class="quote-wrapper">
-      <form class="quote-form reveal" action="#" method="POST" autocomplete="on">
-        <label>Name <input type="text" name="name" required placeholder="Full name" autocomplete="name"></label>
-        <label>Phone <input type="tel" name="phone" required placeholder="(813) 000-0000" autocomplete="tel"></label>
-        <label>Vehicle <input type="text" name="vehicle" placeholder="Year, Make, Model"></label>
-        <label>What's going on with your vehicle? <textarea name="issue" required placeholder="Describe the problem, any warning lights, noises, or symptoms..."></textarea></label>
-        <button type="submit" class="btn-submit">Submit Inquiry</button>
-      </form>
-      <div class="contact-card reveal">
-        <h3 class="card-title">Contact Info</h3>
-        <div class="contact-item"><div class="contact-icon"><svg viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg></div><div><p class="contact-label">Call or Text</p><p class="contact-value"><a href="tel:+18137480049">(813) 748-0049</a></p></div></div>
-        <div class="contact-item"><div class="contact-icon"><svg viewBox="0 0 24 24"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg></div><div><p class="contact-label">Service Area</p><p class="contact-value">Tampa &middot; Valrico &middot; Brandon &amp; Beyond</p></div></div>
-        <div class="contact-item"><div class="contact-icon"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg></div><div><p class="contact-label">Hours</p><p class="contact-value">24/7 Emergency Available</p></div></div>
-        <div class="contact-badge"><svg viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg><span>Licensed, bonded &amp; insured in Florida</span></div>
-        <a class="map-link" href="https://www.google.com/maps/place/Cumba's+Mobile+Auto+Solutions/" target="_blank" rel="noopener noreferrer"><svg viewBox="0 0 24 24"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>View on Google Maps</a>
+  <!-- ═══════════════════════════════════════════════════════════════
+       CONTACT SECTION
+       ═══════════════════════════════════════════════════════════════ -->
+  <section class="contact-section" id="contact">
+    <div class="contact-header reveal">
+      <h2>Get a Free Quote</h2>
+      <p>Tell us what's going on with your vehicle and we'll respond with an honest, no-obligation quote.</p>
+    </div>
+
+    <div class="contact-inner">
+      <div class="contact-grid">
+
+        <div class="contact-form reveal">
+          <form id="contactForm" action="#" method="POST" autocomplete="on">
+            <label for="cf-name">Your Name</label>
+            <input type="text" id="cf-name" name="name" required placeholder="Full name" autocomplete="name">
+
+            <label for="cf-phone">Phone Number</label>
+            <input type="tel" id="cf-phone" name="phone" required placeholder="(813) 000-0000" autocomplete="tel">
+
+            <label for="cf-issue">What's Going On?</label>
+            <textarea id="cf-issue" name="issue" required placeholder="Describe the problem, warning lights, noises, vehicle year/make/model..."></textarea>
+
+            <button type="submit" class="btn-submit">Send Quote Request</button>
+          </form>
+        </div>
+
+        <div class="contact-info-card reveal">
+          <h3>Contact Info</h3>
+
+          <div class="contact-info-item">
+            <div class="contact-info-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+            </div>
+            <div>
+              <p class="contact-info-label">Call or Text</p>
+              <p class="contact-info-value"><a href="tel:+18137480049">(813) 748-0049</a></p>
+            </div>
+          </div>
+
+          <div class="contact-info-item">
+            <div class="contact-info-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+            </div>
+            <div>
+              <p class="contact-info-label">Service Area</p>
+              <p class="contact-info-value">Tampa &middot; Brandon &middot; Valrico &middot; Carrollwood &middot; Riverview</p>
+            </div>
+          </div>
+
+          <div class="contact-info-item">
+            <div class="contact-info-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+            </div>
+            <div>
+              <p class="contact-info-label">Hours</p>
+              <p class="contact-info-value">24/7 &mdash; Emergency Available</p>
+            </div>
+          </div>
+        </div>
+
       </div>
     </div>
   </section>
 
+  <!-- ═══════════════════════════════════════════════════════════════
+       FOOTER
+       ═══════════════════════════════════════════════════════════════ -->
   <footer class="site-footer">
-    <div class="footer-ticker"><div class="ticker-track">
-      <span>CUMBA'S MOBILE AUTO SOLUTIONS &bull; TAMPA BAY FL &bull; 24/7 SERVICE &bull;</span><span>CUMBA'S MOBILE AUTO SOLUTIONS &bull; TAMPA BAY FL &bull; 24/7 SERVICE &bull;</span><span>CUMBA'S MOBILE AUTO SOLUTIONS &bull; TAMPA BAY FL &bull; 24/7 SERVICE &bull;</span><span>CUMBA'S MOBILE AUTO SOLUTIONS &bull; TAMPA BAY FL &bull; 24/7 SERVICE &bull;</span><span>CUMBA'S MOBILE AUTO SOLUTIONS &bull; TAMPA BAY FL &bull; 24/7 SERVICE &bull;</span><span>CUMBA'S MOBILE AUTO SOLUTIONS &bull; TAMPA BAY FL &bull; 24/7 SERVICE &bull;</span><span>CUMBA'S MOBILE AUTO SOLUTIONS &bull; TAMPA BAY FL &bull; 24/7 SERVICE &bull;</span><span>CUMBA'S MOBILE AUTO SOLUTIONS &bull; TAMPA BAY FL &bull; 24/7 SERVICE &bull;</span>
-    </div></div>
-    <div class="footer-bottom"><p>&copy; 2024 CUMBA'S MOBILE AUTO SOLUTIONS LLC. ALL RIGHTS RESERVED.</p></div>
+    <div class="footer-inner">
+
+      <div class="footer-brand">
+        <h3>Cumba's Mobile Auto Solutions</h3>
+        <p>Father &amp; son mobile mechanic team proudly serving the Tampa Bay area. Honest work, fair prices, and a 30-minute response&mdash;every time.</p>
+      </div>
+
+      <div class="footer-col">
+        <h4>Services</h4>
+        <ul>
+          <li><a href="#services">Brake Service</a></li>
+          <li><a href="#services">A/C Repair</a></li>
+          <li><a href="#services">Battery Replacement</a></li>
+          <li><a href="#services">Engine Diagnostics</a></li>
+          <li><a href="#services">Oil Change</a></li>
+          <li><a href="#services">European Imports</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="#about">About Us</a></li>
+          <li><a href="#reviews">Reviews</a></li>
+          <li><a href="#contact">Get a Quote</a></li>
+          <li><a href="tel:8137480049">(813) 748-0049</a></li>
+        </ul>
+      </div>
+
+    </div>
+
+    <div class="footer-bottom">
+      <p>&copy; 2024 Cumba's Mobile Auto Solutions LLC. All rights reserved.</p>
+    </div>
   </footer>
 
-  <script>
-    const nav=document.getElementById('nav');
-    window.addEventListener('scroll',()=>{nav.classList.toggle('scrolled',window.scrollY>40)},{passive:true});
-    const hamburger=document.getElementById('hamburger'),mobileMenu=document.getElementById('mobileMenu');
-    hamburger.addEventListener('click',()=>{const o=hamburger.classList.toggle('active');if(o){mobileMenu.classList.add('open');document.body.style.overflow='hidden'}else closeMenu()});
-    function closeMenu(){hamburger.classList.remove('active');mobileMenu.classList.remove('open');document.body.style.overflow=''}
-    mobileMenu.querySelectorAll('a').forEach(l=>l.addEventListener('click',closeMenu));
-    document.addEventListener('keydown',e=>{if(e.key==='Escape')closeMenu()});
-    const ro=new IntersectionObserver(entries=>{entries.forEach(e=>{if(e.isIntersecting){e.target.classList.add('visible');ro.unobserve(e.target)}})},{threshold:.1,rootMargin:'0px 0px -50px 0px'});
-    document.querySelectorAll('.reveal').forEach(el=>ro.observe(el));
-    document.querySelectorAll('a[href^="#"]').forEach(a=>{a.addEventListener('click',function(e){const t=document.querySelector(this.getAttribute('href'));if(t){e.preventDefault();t.scrollIntoView({behavior:'smooth',block:'start'})}})});
+  <!-- ═══════════════════════════════════════════════════════════════
+       SCHEMA.ORG JSON-LD
+       ═══════════════════════════════════════════════════════════════ -->
+  <script type="application/ld+json">
+  {
+    "@context":"https://schema.org",
+    "@type":"AutoRepair",
+    "name":"Cumba's Mobile Auto Solutions",
+    "image":"assets/logo.png",
+    "telephone":"(813) 748-0049",
+    "url":"https://just-krispy.github.io/cumbas-mobile-auto/",
+    "address":{"@type":"PostalAddress","addressLocality":"Tampa","addressRegion":"FL"},
+    "areaServed":["Tampa","Brandon","Valrico","Carrollwood","Riverview"],
+    "openingHours":"Mo-Su 00:00-23:59",
+    "aggregateRating":{"@type":"AggregateRating","ratingValue":"4.9","reviewCount":"380","bestRating":"5"},
+    "hasOfferCatalog":{"@type":"OfferCatalog","name":"Mobile Auto Repair Services","itemListElement":[
+      {"@type":"Offer","itemOffered":{"@type":"Service","name":"Brake Service"}},
+      {"@type":"Offer","itemOffered":{"@type":"Service","name":"A/C Repair"}},
+      {"@type":"Offer","itemOffered":{"@type":"Service","name":"Battery Replacement"}},
+      {"@type":"Offer","itemOffered":{"@type":"Service","name":"Engine Diagnostics"}},
+      {"@type":"Offer","itemOffered":{"@type":"Service","name":"Oil Change"}},
+      {"@type":"Offer","itemOffered":{"@type":"Service","name":"European Import Specialists"}}
+    ]}
+  }
   </script>
 
-  <script type="application/ld+json">{"@context":"https://schema.org","@type":"AutoRepair","name":"Cumba's Mobile Auto Solutions","image":"assets/hero-mechanic-DKnMr7oL.jpg","telephone":"+1-813-748-0049","address":{"@type":"PostalAddress","addressLocality":"Tampa","addressRegion":"FL","addressCountry":"US"},"areaServed":["Tampa","Valrico","Brandon"],"openingHours":"Mo-Su 00:00-23:59","aggregateRating":{"@type":"AggregateRating","ratingValue":"4.9","reviewCount":"380"},"priceRange":"$$","description":"Tampa Bay's top-rated mobile mechanic. 380+ five-star Google reviews. We come to you 24/7.","hasOfferCatalog":{"@type":"OfferCatalog","name":"Mobile Auto Repair Services","itemListElement":[{"@type":"Offer","itemOffered":{"@type":"Service","name":"A/C Service"}},{"@type":"Offer","itemOffered":{"@type":"Service","name":"Battery Swap"}},{"@type":"Offer","itemOffered":{"@type":"Service","name":"Brake Repair"}},{"@type":"Offer","itemOffered":{"@type":"Service","name":"Diagnostics"}},{"@type":"Offer","itemOffered":{"@type":"Service","name":"Engine Work"}},{"@type":"Offer","itemOffered":{"@type":"Service","name":"Oil Change"}}]}}</script>
+  <!-- ═══════════════════════════════════════════════════════════════
+       JAVASCRIPT
+       ═══════════════════════════════════════════════════════════════ -->
+  <script>
+    // ── Nav scroll shadow ──────────────────────────────────────────
+    const nav = document.getElementById('mainNav');
+    window.addEventListener('scroll', function () {
+      if (window.scrollY > 10) {
+        nav.classList.add('scrolled');
+      } else {
+        nav.classList.remove('scrolled');
+      }
+    }, { passive: true });
+
+    // ── Hamburger toggle ───────────────────────────────────────────
+    const hamburger = document.getElementById('hamburger');
+    const mobileMenu = document.getElementById('mobileMenu');
+
+    hamburger.addEventListener('click', function () {
+      const isOpen = mobileMenu.classList.toggle('open');
+      hamburger.classList.toggle('active');
+      hamburger.setAttribute('aria-expanded', isOpen);
+      document.body.style.overflow = isOpen ? 'hidden' : '';
+    });
+
+    function closeMenu() {
+      mobileMenu.classList.remove('open');
+      hamburger.classList.remove('active');
+      hamburger.setAttribute('aria-expanded', 'false');
+      document.body.style.overflow = '';
+    }
+
+    // Close menu on Escape key
+    document.addEventListener('keydown', function (e) {
+      if (e.key === 'Escape') closeMenu();
+    });
+
+    // ── Scroll Reveal (IntersectionObserver) ───────────────────────
+    const observer = new IntersectionObserver(function (entries) {
+      entries.forEach(function (entry) {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+          observer.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.1, rootMargin: '0px 0px -50px 0px' });
+
+    document.querySelectorAll('.reveal').forEach(function (el) {
+      observer.observe(el);
+    });
+
+    // ── Smooth scroll for anchor links ─────────────────────────────
+    document.querySelectorAll('a[href^="#"]').forEach(function (anchor) {
+      anchor.addEventListener('click', function (e) {
+        const target = document.querySelector(this.getAttribute('href'));
+        if (target) {
+          e.preventDefault();
+          target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        }
+      });
+    });
+
+    // ── Contact form handling ──────────────────────────────────────
+    const contactForm = document.getElementById('contactForm');
+    if (contactForm) {
+      contactForm.addEventListener('submit', function (e) {
+        e.preventDefault();
+        const btn = contactForm.querySelector('.btn-submit');
+        const originalText = btn.textContent;
+        btn.textContent = 'Sending...';
+        btn.disabled = true;
+
+        // Simulate form submission (replace with real endpoint)
+        setTimeout(function () {
+          btn.textContent = 'Quote Request Sent!';
+          btn.style.background = '#16a34a';
+          contactForm.reset();
+
+          setTimeout(function () {
+            btn.textContent = originalText;
+            btn.style.background = '';
+            btn.disabled = false;
+          }, 3000);
+        }, 1000);
+      });
+    }
+  </script>
+
 </body>
 </html>
